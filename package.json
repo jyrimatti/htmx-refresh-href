@@ -1,5 +1,5 @@
 {
-  "name": "htmx-persist-fields",
+  "name": "htmx-refresh-href",
   "version": "1.0.0",
   "description": "Htmx extension to refresh hrefs of anchors with the actual URL used for the Ajax call",
   "author": "Jyri-Matti Lähteenmäki <jyri-matti@lahteenmaki.net>",
