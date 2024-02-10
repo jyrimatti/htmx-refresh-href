@@ -1,0 +1,29 @@
+{
+  "name": "htmx-persist-fields",
+  "version": "1.0.0",
+  "description": "Htmx extension to refresh hrefs of anchors with the actual URL used for the Ajax call",
+  "author": "Jyri-Matti Lähteenmäki <jyri-matti@lahteenmaki.net>",
+  "keywords": [
+    "Htmx",
+    "extension"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "test": "mocha-chrome test/index.html",
+    "dist": "cp -r src/* dist/ && npm run-script uglify",
+    "uglify": "uglifyjs -m eval -o dist/refresh-href.min.js dist/refresh-href.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jyrimatti/htmx-refresh-href.git"
+  },
+  "dependencies": {
+    "htmx.org": "^1.9"
+  },
+  "devDependencies": {
+    "chai": "^4.3.6",
+    "mocha": "^10.2.0",
+    "sinon": "^9.2.4",
+    "uglify-js": "^3.15.0"
+  }
+}
